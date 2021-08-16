@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 	</head>
 	<body class="is-preload">
 
@@ -91,13 +92,6 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form-->
-							<div id="waline"></div>
-								<script>
-									Waline({
-										el: '#waline',
-										serverURL: 'https://comment.iflu.cf',
-									});
-								</script>
 								<ul class="icons">
 									<!--li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -105,6 +99,14 @@
 									<li><a href="https://github.com/DaoChen6" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="https://t.me/iIofm" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
 								</ul>
+								<div id="comment"></div>
+								<script>
+									Waline({
+										el: '#comment',
+										serverURL: 'https://comment.iflu.cf',
+										dark: 'auto',
+									});
+								</script>
 							</article>
 
 						<!-- Elements -->
@@ -367,7 +369,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-	    	<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 
 	</body>
 </html>
