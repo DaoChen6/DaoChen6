@@ -22,7 +22,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>道辰</h1>
-								<p>大可不必了解我，看我笑话就好了。</p>
+								<p id="hitokoto_text"></p>
 							</div>
 						</div>
 						<div>
@@ -372,6 +372,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="//cdn.jsdelivr.net/gh/DaoChen6/DaoChen6@main/assets/js/breakpoints.min.js"></script>
 			<script src="//cdn.jsdelivr.net/gh/DaoChen6/DaoChen6@main/assets/js/util.js"></script>
 			<script src="//cdn.jsdelivr.net/gh/DaoChen6/DaoChen6@main/assets/js/main.js"></script>
+		    <script>
+			fetch('https://v1.hitokoto.cn?c=f')
+					.then(response => response.json())
+					.then(data => {
+						const hitokoto = document.getElementById('hitokoto_text')
+						hitokoto.innerText = data.hitokoto
+					})
+					.catch(console.error)
+			</script>
 
 	</body>
 </html>
