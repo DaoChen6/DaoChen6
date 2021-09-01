@@ -23,6 +23,7 @@
 							<div class="inner">
 								<h1>道辰</h1>
 								<p id="hitokoto_text"></p>
+								-「<strong id="hitokoto_from"></strong>」
 							</div>
 						</div>
 						<div>
@@ -378,6 +379,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					.then(data => {
 						const hitokoto = document.getElementById('hitokoto_text')
 						hitokoto.innerText = data.hitokoto
+						const from = document.getElementById('hitokoto_from')
+						from.innerText = data.from
 					})
 					.catch(console.error)
 			</script>
