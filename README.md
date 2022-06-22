@@ -3,3 +3,5 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DaoChen6&layout=compact&locale=cn&show_icons=true&count_private=true&bg_color=45,191970,B0C4DE&title_color=6495ED)](https://github.com/DaoChen6)
 
 捐赠地址（TRC20）：TScd7U9QUXZVS6DawwoRPHnNminreN4fJp
+
+[Her**u仓库备份自取](https://t.me/iflugp/14941)
